@@ -1,4 +1,4 @@
-package net.examplemod.fabric;
+package net.createresonance.fabric;
 
 import net.fabricmc.loader.api.FabricLoader;
 

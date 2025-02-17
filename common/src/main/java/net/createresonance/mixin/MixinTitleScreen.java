@@ -1,6 +1,5 @@
-package net.examplemod.mixin;
+package net.createresonance.mixin;
 
-import net.examplemod.ExampleMod;
 import net.minecraft.client.gui.screens.TitleScreen;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -11,6 +10,6 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public class MixinTitleScreen {
     @Inject(at = @At("HEAD"), method = "init()V")
     private void init(CallbackInfo info) {
-        ExampleMod.LOGGER.info("Hello from {}!", ExampleMod.class.getName());
+        net.createresonance.CreateResonance.LOGGER.info("Hello from {}!", net.createresonance.CreateResonance.class.getName());
     }
 }
